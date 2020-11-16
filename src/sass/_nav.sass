@@ -1,0 +1,181 @@
+.nav__menu
+  .nav__items
+    display: flex
+    list-style-type: none
+    li
+      position: relative
+      padding-right: 60px 
+    span
+      border: solid black 
+      border-width: 0 2px 2px 0
+      display: inline-block
+      padding: 3px
+      border-color: #ffffff
+      display: none
+    .arrow
+      position: absolute
+      top: 7px
+      right: 40px
+    .arrow.active
+      transform: rotate(-135deg)
+      -webkit-transform: rotate(-135deg)
+      -moz-transform: rotate(-135deg)
+      -ms-transform: rotate(-135deg)
+      -o-transform: rotate(-135deg)
+      transition: .3s
+    .down
+      transform: rotate(45deg)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transition: .3s
+
+    // *** subitems
+    .nav__items-sub
+      display: none
+      position: absolute
+      left: 0
+      min-width: 100px
+      li 
+        padding: 0
+        .nav__link-sub
+          color: #ffffff
+          font-family: 'PT Sans'
+          font-size: 16px
+          font-weight: 400
+          display: inline-block
+          padding: 5px 0 5px 0
+      .nav__link-sub:hover
+        color: #ffff00
+        transition: .4s
+      .nav__link-sub:active
+        color: #ff0000
+
+    // *** items
+    .nav__link
+      font-family: 'PT Sans'
+      font-size: 16px
+      font-weight: 400
+      color: #ffffff
+    .nav__link:hover
+      color: #ffff00
+      transition: .4s
+    .nav__link:active
+      color: #ff0000
+
+// *** login
+.nav__login
+  .nav__items
+    display: flex
+    li:nth-child(1)
+      padding-right: 60px
+    .nav__link
+      font-family: 'PT Sans'
+      font-size: 16px
+      font-weight: 400
+      color: #ffffff
+    .nav__link:hover
+      color: #ffff00
+      transition: .4s
+    .nav__link:active
+      color: #ff0000
+
+// *** media
+@media (max-width: 1023px)
+  .nav__menu
+    .nav__items
+      li
+        padding-right: 40px 
+      .arrow
+        right: 20px
+  .nav__login
+    .nav__items
+      li:nth-child(1)
+        padding-right: 40px
+@media (max-width: 959px)
+  .nav__logotype
+    img
+      width: 230px
+  .nav__menu
+    .nav__items
+      li
+        padding-right: 20px 
+      li:nth-child(1)
+        padding-right: 30px
+      .arrow
+        // right: 15px
+      .nav__link
+        font-size: 14px
+      .nav__items-sub
+        li 
+          .nav__link-sub
+            font-size: 14px
+  .nav__login
+    .nav__items
+      li:nth-child(1)
+        padding-right: 20px
+        .nav__link
+          font-size: 14px
+      li
+        .nav__link
+          font-size: 14px
+@media (max-width: 767px)
+  .nav__logotype
+    img
+      // display: none
+      width: 160px
+      position: absolute
+      top: 14px
+      left: 20px
+  .nav__menu
+    // padding-top: 60px
+    .nav__items
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: rgba(26, 100, 83, 0.7)
+      width: 100%
+      margin: 36px 0px 0 0
+      z-index: 100
+      // display: none
+      li
+        text-align: center
+        padding-right: 0
+        padding: 5px
+      li:nth-child(1)
+        width: 130px
+        margin: 0 auto
+        padding-right: 0
+        padding: 5px
+      .arrow
+        top: 12px
+      .arrow.active
+        // right: 7px
+        // top: 10px
+      .nav__items-sub
+        position: relative
+        left: 0
+        top: 0
+  .nav__login
+    // display: none
+    background-color: rgba(26, 100, 83, 0.7)
+    width: 100%
+    z-index: 100
+    .nav__items
+      text-align: center
+      display: block
+      padding: 0 0 5px 0
+      li:nth-child(1)
+        padding: 5px
+        padding-right: 0
+
+
+
+
+  
+  
+
+
+
+
