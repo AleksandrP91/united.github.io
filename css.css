@@ -1,7 +1,7 @@
 .fff {
-  /* transform: rotate(-185deg);
-  -webkit-transform: rotate(-185deg);
-  -moz-transform: rotate(-185deg);
-  -ms-transform: rotate(-185deg);
-  -o-transform: rotate(-185deg); */
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
